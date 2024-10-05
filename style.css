@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+
+}
+.banner {
+    background-image: url(gu.png);
+    background-size: cover;
+    padding: 250px 0;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.logo{
+    color: #711DB0;
+    font-family: "Spicy Rice", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.logo:hover {
+    color: black;
+
+}
+.AB {
+    background-color: #e7eaf6;
+}
+.BXX {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.BXX:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.IG {
+    padding: 80px 0;
+}
+.sh{
+    box-shadow:rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.co:hover{
+    font-size: 30px;
+}
+/* .pb-3:hover{
+    color:#711DB0;
+    text-shadow: 0 0 15px #711DB0,0 0 50px #711DB0;
+    animation: light .5s linear infinite;
+}
+@keyframes light {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+
+} */
+
+.cbtn{
+    padding: 10px 45px;
+    background-color: #525CEB;
+    color: #fff;
+    font-size: 18px;
+    border-radius:10px ;
+    box-shadow: none;
+}
+/* Adding a fade-in effect to sections */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+
+/* Staggering animations */
+#About {
+    animation-delay: 0.s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; 
+}
+
+#Skills {
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+#Contact {
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; 
+    background-color: #6a5bc2;
+}
+.img {
+
+        transition: transform 0.5s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0px 0px 0 rgba(248, 247, 247, 0);
+}
+.pb-4{
+    color: gray;
+
+}
+.text{
+    font-size: 20px;
+    line-height: 30px;
+    color: #212121;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* #google_translate_element {
+    position: absolute; 
+     top: 10px;
+    right: 10px;
+} */
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 100px 0;
+    }
+    .img {
+        width: 100%;
+    }
+}
+
+.banner, #About, #Skills, #Contact {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+#google_translate_element{
+   padding-left: 87%;
+   padding-top: 3%;
+}
+@media (max-width: 768px) {
+    #google_translate_element {
+        padding-left: 42%;
+        padding-top: 1%;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-section {
+    animation: fadeInUp 1s ease-in-out forwards;
+    opacity: 0;
+}
+
